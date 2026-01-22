@@ -1,0 +1,394 @@
+.diet-page {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+/* 🌿 Hero Section */
+.hero {
+  background: url('/assets/images/diet-banner.jpg') no-repeat center center/cover;
+ 
+  height: 70vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  text-align: center;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  font-size: 1.2rem;
+}
+
+/* 🌱 Importance Section */
+.importance-section {
+  padding: 70px 10%;
+  display: flex;
+  justify-content: center;
+  background-color: #fffaf3;
+}
+
+.importance-section .content {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.importance-section .text {
+  flex: 1 1 450px;
+}
+
+.importance-section .text h2 {
+  color: #2f4f2f;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.importance-section .text p {
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.importance-section .image {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.importance-section .image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.importance-section .image img:hover {
+  transform: scale(1.03);
+}
+
+/* Responsive view for small screens */
+@media (max-width: 900px) {
+  .importance-section .content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .importance-section .image img {
+    max-width: 90%;
+  }
+}
+
+
+/* 🌸 Dosha Section */
+.dosha-section {
+  text-align: center;
+  padding: 80px 8%;
+  background: linear-gradient(180deg, #f6fff8, #e9fce9);
+}
+
+.dosha-section h2 {
+  font-size: 2.3rem;
+  color: #1e4620;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.dosha-section .subtitle {
+  color: #555;
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+.dosha-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;
+}
+
+.dosha-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  border-radius: 25px;
+  padding: 25px;
+  width: 310px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  border-top: 4px solid transparent;
+}
+
+.dosha-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Unique border top colors for each dosha */
+.vata {
+  border-top-color: #b28bff;
+}
+.pitta {
+  border-top-color: #ffb347;
+}
+.kapha {
+  border-top-color: #6ecf68;
+}
+
+/* Image styling */
+.dosha-card .image {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+.dosha-card .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.dosha-card:hover .image img {
+  transform: scale(1.05);
+}
+
+/* Text styles */
+.dosha-card h3 {
+  font-size: 1.3rem;
+  color: #1d4b1a;
+  margin-bottom: 10px;
+}
+
+.dosha-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Button styling */
+.learn-btn {
+  background: linear-gradient(to right, #4CAF50, #2e7d32);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+.learn-btn:hover {
+  background: linear-gradient(to right, #45a049, #256c28);
+}
+
+/* Responsive layout */
+@media (max-width: 950px) {
+  .dosha-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dosha-card {
+    width: 90%;
+  }
+}
+
+
+/* 🍎 Healthy Living Tips Section */
+.tips-section {
+  text-align: center;
+  padding: 90px 8%;
+  background: linear-gradient(180deg, #f4fff1, #e6ffe8);
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+.tips-section h2 {
+  font-size: 2.6rem;
+  color: #1b5e20;
+  font-weight: 700;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.tips-section .subtitle {
+  color: #4d4d4d;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 55px;
+  line-height: 1.7;
+}
+
+/* 🌿 Tips Grid */
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+  justify-content: center;
+}
+
+/* 🍃 Healthy Living Tips Section */
+.tips-section {
+  text-align: center;
+  padding: 90px 8%;
+  background: linear-gradient(180deg, #fdfcf7, #f3ffec);
+  font-family: 'Poppins', sans-serif;
+}
+
+.tips-section h2 {
+  font-size: 2.6rem;
+  color: #1b5e20;
+  font-weight: 700;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.tips-section .subtitle {
+  color: #4d4d4d;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 55px;
+  line-height: 1.7;
+}
+
+/* 🌿 Tips Grid */
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+  justify-content: center;
+}
+
+/* ✨ Ayurvedic Themed Card */
+.tip-card {
+  background: linear-gradient(135deg, #f8fff4 0%, #e8f5e9 100%);
+  border-radius: 25px;
+  padding: 25px;
+  box-shadow: 0 8px 20px rgba(60, 120, 70, 0.12);
+  transition: all 0.5s ease;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid rgba(34, 139, 34, 0.15);
+}
+
+.tip-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 28px rgba(46, 125, 50, 0.25);
+  background: linear-gradient(135deg, #f4fff0, #e0f7e0);
+}
+
+/* 🌸 Image */
+.tip-card .icon {
+  width: 100%;
+  height: 190px;
+  overflow: hidden;
+  border-radius: 18px;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 15px rgba(0, 100, 0, 0.1);
+}
+
+.tip-card .icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease, filter 0.3s ease;
+  border-radius: 18px;
+}
+
+.tip-card:hover .icon img {
+  transform: scale(1.1);
+  filter: brightness(1.08);
+}
+
+/* 🌼 Text */
+.tip-card h3 {
+  font-size: 1.3rem;
+  color: #2e7d32;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.tip-card p {
+  color: #444;
+  font-size: 0.96rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* 🍀 Soft Glow Animation */
+.tip-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 25px;
+  background: radial-gradient(circle at top left, rgba(76, 175, 80, 0.06), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.tip-card:hover::after {
+  opacity: 1;
+}
+
+/* 🌿 Animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tip-card {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+
+/* 🌿 CTA Section */
+.cta-section {
+  text-align: center;
+  background-color: #e0f3e0;
+  padding: 50px 10%;
+}
+
+.btn-consult {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.btn-consult:hover {
+  background-color: #45a049;
+}

@@ -1,0 +1,9 @@
+.about .container {
+    display: block; /* Or flex-direction: column; if previously using flex */
+    text-align: left;
+  }
+  
+  .about-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }

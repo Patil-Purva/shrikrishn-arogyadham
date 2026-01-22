@@ -1,0 +1,40 @@
+<main class="container">
+    <div *ngIf="isLoading" class="loading-spinner">Loading videos...</div>
+    <div *ngIf="error" class="error-message">{{ error }}</div>
+  
+    <ng-container *ngIf="!isLoading && !error">
+      <!-- Channel Header -->
+      <div class="channel-header" *ngIf="channelInfo">
+        <img [src]="channelInfo.snippet.thumbnails.high.url" alt="Channel Profile Picture" />
+        <div class="channel-details">
+          <h1>Shrikrishna Arogyavani</h1>
+          <p class="handle">dr.prasadsanagar · 
+            {{ channelInfo.statistics.subscriberCount | number }} subscribers · 
+            {{ channelInfo.statistics.videoCount | number }} videos
+          </p>
+          
+          <p class="tagline">🙏 Welcome to a space where health meets simplicity!</p>
+        </div>
+        <a href="https://www.youtube.com/channel/UCR2AZ3n2nR2nriCJBvW3y3A?sub_confirmation=1" target="_blank" class="subscribe-btn">
+          Subscribe
+        </a>
+      </div>
+  
+      <!-- Title Section -->
+      <div class="title-section">
+        <h2>Our YouTube Videos</h2>
+        <p>Explore our latest videos on Ayurveda and Yoga!</p>
+      </div>
+  
+      <!-- Video Gallery -->
+      <div class="video-gallery">
+        <div class="video-item" *ngFor="let video of videos">
+            <iframe [src]="video.safeUrl" frameborder="0" allowfullscreen></iframe>
+
+
+          <h4>{{ video.snippet.title }}</h4>
+        </div>
+      </div>
+    </ng-container>
+  </main>
+  

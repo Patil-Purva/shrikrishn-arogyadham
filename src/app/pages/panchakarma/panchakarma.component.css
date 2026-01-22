@@ -1,0 +1,200 @@
+/* 🌿 Panchakarma Header */
+.panchakarma-header {
+  text-align: center;
+  background: linear-gradient(to right, #f9efe3, #fff8ed);
+  padding: 60px 20px 40px;
+}
+
+.panchakarma-header h1 {
+  font-size: 2.3rem;
+  color: #4b2e05;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.panchakarma-header h1 span {
+  color: #c46b00;
+}
+
+.panchakarma-header p {
+  font-size: 1.1rem;
+  color: #6b4c27;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+/* 🌿 About Section */
+.about {
+  padding: 50px 80px;
+  background-color: #fffaf3;
+  text-align: center;
+}
+
+.about h2 {
+  color: #b35400;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.about p {
+  color: #5a4a36;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+/* 🌸 Gallery */
+.gallery {
+  background: #fff8ee;
+  text-align: center;
+  padding: 50px 30px;
+}
+
+.gallery h2 {
+  color: #b35400;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.gallery-container img {
+  width: 23%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+}
+
+.gallery-container img:hover {
+  transform: scale(1.05);
+}
+
+/* 🌿 Therapies Section */
+.therapies {
+  background: linear-gradient(to bottom, #fffaf3, #f8eedf);
+  text-align: center;
+  padding: 60px 40px;
+}
+
+.therapies h2 {
+  color: #b35400;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.therapy-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.therapy-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* 🌸 Therapy Card */
+.therapy-card {
+  background: #fff8ee;
+  border-radius: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  flex: 0 0 18%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  overflow: hidden;
+}
+
+.therapy-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 4px solid #f7b42c;
+  transition: transform 0.3s ease;
+}
+
+.therapy-card h3 {
+  color: #b35400;
+  font-size: 1.1rem;
+  margin: 12px 0 5px;
+  font-weight: 600;
+}
+
+.therapy-card p {
+  color: #5a4a36;
+  font-size: 0.95rem;
+  padding: 0 10px 15px;
+  line-height: 1.5;
+}
+
+.therapy-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.2);
+}
+
+.therapy-card:hover img {
+  transform: scale(1.05);
+}
+
+/* 🌺 CTA Section */
+.cta {
+  text-align: center;
+  background: #fff5e1;
+  padding: 70px 20px;
+}
+
+.cta h2 {
+  color: #4b2e05;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.cta p {
+  color: #6b4c27;
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
+
+.cta-button {
+  background: linear-gradient(45deg, #ff8c00, #ffb84d);
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 15px 40px;
+  border-radius: 35px;
+  box-shadow: 0 8px 16px rgba(255, 140, 0, 0.4);
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.cta-button:hover {
+  background: linear-gradient(45deg, #ffb84d, #ff8c00);
+  transform: scale(1.08);
+  box-shadow: 0 12px 22px rgba(255, 140, 0, 0.5);
+}
+
+/* 📱 Responsive */
+@media (max-width: 1024px) {
+  .therapy-card {
+    flex: 0 0 40%;
+  }
+  .gallery-container img {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .therapy-card {
+    flex: 0 0 80%;
+  }
+  .gallery-container img {
+    width: 90%;
+  }
+}

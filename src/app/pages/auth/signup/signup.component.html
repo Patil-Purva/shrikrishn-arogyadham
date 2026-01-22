@@ -1,0 +1,19 @@
+<div class="signup-container">
+  <h2>Sign Up</h2>
+
+  <form [formGroup]="signupForm" (ngSubmit)="signup()">
+    <div>
+      <label for="email">Email:</label>
+      <input id="email" type="email" formControlName="email" placeholder="Enter your email" />
+    </div>
+
+    <div>
+      <label for="password">Password:</label>
+      <input id="password" type="password" formControlName="password" placeholder="Enter your password" />
+    </div>
+
+    <button type="submit" [disabled]="signupForm.invalid">Sign Up</button>
+  </form>
+
+  <p *ngIf="message">{{ message }}</p>
+</div>

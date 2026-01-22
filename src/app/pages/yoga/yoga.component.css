@@ -1,0 +1,268 @@
+/* ---------- HERO / carousel ---------- */
+.yoga-hero {
+  width: 100%;
+  height: 88vh; /* big hero; adjust if needed */
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* slides-track is wide because each .slide is 100% width and they are flexed in a row */
+.slides-track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s linear;
+}
+
+
+/* each slide occupies full viewport width */
+.slide {
+  flex: 0 0 100%;
+  height: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* preserves aspect and fills container, no white space */
+  display: block;
+}
+
+/* overlay at top-middle */
+.overlay-top {
+  position: absolute;
+  top: 10%;               /* top middle placement as you requested */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  background: rgba(0,0,0,0.45);
+  color: #fff;
+  text-align: center;
+  padding: 18px 28px;
+  border-radius: 10px;
+  max-width: 880px;
+  width: calc(100% - 60px);
+  box-sizing: border-box;
+}
+
+.overlay-top h1 {
+  margin: 0 0 6px 0;
+  font-size: 2.4rem;
+  line-height: 1.05;
+}
+
+.overlay-top p {
+  margin: 0;
+  font-size: 1rem;
+  opacity: 0.95;
+}
+
+/* ---------- Our Yoga Sessions (left text, right 6 images) ---------- */
+.yoga-session {
+  background: #f7fff7;
+  padding: 60px 20px;
+}
+
+.session-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+  align-items: start;
+  flex-wrap: wrap;
+}
+
+/* left text block */
+.session-left {
+  flex: 1 1 45%;
+  min-width: 300px;
+}
+
+.session-left h2 {
+  color: #1f5b3f;
+  margin-bottom: 12px;
+  font-size: 2rem;
+}
+
+.session-left p {
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+/* right image grid that fills the right side (3 columns x 2 rows) */
+.session-right {
+  flex: 1 1 50%;
+  min-width: 320px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 10px;
+}
+
+.session-right img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+  transition: transform 0.25s ease;
+}
+
+.session-right img:hover {
+  transform: scale(1.03);
+}
+
+/* ---------- Activities ---------- */
+/* 🌸 Yoga Activities Section */
+.yoga-activities {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 80px auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+/* 🌼 Card Container */
+.activity-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  width: 340px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 💫 Hover Animation */
+.activity-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* 🧘‍♀️ Image at Top */
+.activity-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 4px solid #d4a017;
+}
+
+/* 🕉️ Title */
+.activity-card h3 {
+  font-size: 1.4rem;
+  margin-top: 15px;
+  color: #1a3c34;
+  font-weight: 600;
+}
+
+/* 🌿 Description */
+.activity-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  padding: 10px 20px 0;
+}
+
+/* ☀️ Button */
+.learn-more-btn {
+  background-color: #d4a017;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin: 20px auto 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.learn-more-btn:hover {
+  background-color: #b68b12;
+  transform: scale(1.05);
+}
+
+/* 📱 Responsive */
+@media (max-width: 1024px) {
+  .activity-card {
+    width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .yoga-activities {
+    flex-direction: column;
+    align-items: center;
+  }
+  .activity-card {
+    width: 90%;
+  }
+}
+
+
+/* ---------- Timings ---------- */
+.yoga-timings {
+  padding: 40px 20px;
+  text-align: center;
+  background: #f6fff6;
+}
+
+.batch-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.batch-card {
+  width: 220px;
+  padding: 16px;
+  background: #e2f2e6;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+/* ---------- Contact ---------- */
+.yoga-contact {
+  padding: 40px 20px;
+  text-align: center;
+  background: #eaf8ee;
+}
+
+.teacher-contact {
+  display: inline-block;
+  background: #fff;
+  padding: 14px 22px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .overlay-top {
+    top: 6%;
+    padding: 14px 18px;
+  }
+  .overlay-top h1 { font-size: 1.6rem; }
+  .session-container { gap: 18px; }
+  .session-right img { height: 120px; }
+  .yoga-hero { height: 60vh; }
+}
+
+@media (max-width: 560px) {
+  .session-container { flex-direction: column-reverse; }
+  .session-right { grid-template-columns: repeat(2,1fr); }
+  .overlay-top { width: calc(100% - 30px); top: 5%; }
+  .yoga-hero { height: 50vh; }
+}

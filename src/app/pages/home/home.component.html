@@ -1,0 +1,75 @@
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>Shrikrishna Arogyadham</h1>
+    <p>Traditional Ayurvedic Healing for Modern Times</p>
+    <button class="explore-btn" (click)="scrollToServices()">Explore Services</button>
+  </div>
+</section>
+
+<!-- Ayurvedic Services Section -->
+<section class="services-section" id="services">
+  <h2 class="section-title">Our Ayurvedic Services</h2>
+  <div class="underline"></div>
+
+  <div class="services-container">
+    <!-- Panchakarma Therapy -->
+    <div class="service-card">
+      <div class="service-icon">
+        <i class="fas fa-spa"></i>
+      </div>
+      <h3>Panchakarma Therapy</h3>
+      <p>Complete detoxification and rejuvenation treatments to restore balance.</p>
+      <button class="explore-btn" (click)="navigateToPage('/panchakarma')">Explore</button>
+    </div>
+
+    <!-- Herbal Medicine -->
+    <div class="service-card">
+      <div class="service-icon">
+        <i class="fas fa-leaf"></i>
+      </div>
+      <h3>Herbal Medicine</h3>
+      <p>Customized herbal formulations for various conditions and overall wellness.</p>
+      <button class="explore-btn" (click)="navigateToPage('/herbal-medicine')">Explore</button>
+    </div>
+
+    <!-- Diet Consultation -->
+    <div class="service-card">
+      <div class="service-icon">
+        <i class="fas fa-utensils"></i>
+      </div>
+      <h3>Diet Consultation</h3>
+      <p>Personalized diet plans designed according to your unique Ayurvedic dosha.</p>
+      <button class="explore-btn" (click)="navigateToPage('/diet-consultation')">Explore</button>
+    </div>
+
+    <!-- Yoga Classes -->
+    <div class="service-card">
+      <div class="service-icon">
+        <i class="fas fa-seedling"></i>
+      </div>
+      <h3>Yoga Classes</h3>
+      <p>Morning yoga sessions guided by our experienced Ayurvedic doctor to enhance your mind-body.</p>
+      <button class="explore-btn" routerLink="/yoga">Explore</button>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-content">
+      <h2>About Shrikrishna Arogyadham</h2>
+      <p>
+        Founded in 2005, Shrikrishna Arogyadham has been providing authentic Ayurvedic treatments in Kolhapur.
+        Our mission is to bring the ancient wisdom of Ayurveda to modern life, helping people achieve optimal health naturally.
+      </p>
+      <p>
+        Our experienced practitioners combine traditional knowledge with modern understanding to create personalized
+        treatment plans for each patient.
+      </p>
+      <a routerLink="/books" class="btn">Explore Our Book</a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,193 @@
+/* Hero Banner */
+.hero-section {
+  background-image: url('/assets/images/herbal-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-content {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px 40px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+}
+
+/* Intro Section */
+.intro-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #fffaf3;
+  padding: 60px 40px;
+  gap: 40px;
+}
+
+.intro-text {
+  flex: 1;
+  max-width: 550px;
+}
+
+.intro-text h2 {
+  color: #2f5d2f;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.intro-text p {
+  color: #4b4b33;
+  line-height: 1.6;
+}
+
+.intro-image img {
+  width: 450px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Herbal Cards */
+.herbal-section {
+  text-align: center;
+  background: linear-gradient(to bottom, #f1f9f2, #fdfcf7);
+  padding: 70px 20px;
+}
+
+.herbal-section h2 {
+  color: #225522;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  color: #4a4a4a;
+  margin-bottom: 40px;
+}
+
+.herbal-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.herbal-card {
+  background-color: #fff;
+  border-radius: 15px;
+  width: 320px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.herbal-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.herbal-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.herbal-card h3 {
+  color: #2b5725;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.herbal-card p {
+  color: #4a4a33;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.herbal-card button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.herbal-card button:hover {
+  background-color: #2e7d32;
+}
+
+/* Herbal Tips Section */
+.tips-section {
+  background-color: #f6fff4;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.tips-section h2 {
+  color: #225522;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #4a4a4a;
+  margin-bottom: 40px;
+}
+
+.tips-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tip-card {
+  background-color: #ffffff;
+  border: 1px solid #bcd5b0;
+  border-radius: 12px;
+  width: 300px;
+  padding: 15px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tip-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 14px rgba(0,0,0,0.15);
+}
+
+.tip-card img {
+  width: 100%;
+  height: 180px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.tip-card h4 {
+  color: #2f5d2f;
+  margin-bottom: 10px;
+}
+
+.tip-card p {
+  color: #4a4a4a;
+  font-size: 0.95rem;
+}

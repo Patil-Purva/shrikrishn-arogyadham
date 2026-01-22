@@ -1,0 +1,45 @@
+<div class="courses-container">
+  <h2 class="page-title">🎓 Ayurveda Courses for BAMS Students</h2>
+
+  <div class="courses-grid">
+    <div class="course-card" *ngFor="let course of courses">
+      <h3 class="course-title">{{ course.title }}</h3>
+
+      <!-- Preview Video -->
+      <iframe
+        class="preview-video"
+        width="100%"
+        height="200"
+        [src]="course.previewVideoUrl"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+
+      <p class="course-description">{{ course.description }}</p>
+      <p class="course-price"><strong>Price:</strong> ₹{{ course.price }}</p>
+
+      <!-- Buy button or video list -->
+      <div *ngIf="!course.purchased; else showVideos">
+        <button class="buy-button" (click)="buyCourse(course.id)">
+          🛒 Buy Now
+        </button>
+      </div>
+
+      <ng-template #showVideos>
+        <div class="videos-section">
+          <h4>🎥 Course Videos</h4>
+          <div *ngFor="let video of course.videos" class="video-card">
+            <p class="video-title">{{ video.title }}</p>
+            <iframe
+              width="100%"
+              height="180"
+              [src]="video.url"
+              frameborder="0"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </ng-template>
+    </div>
+  </div>
+</div>

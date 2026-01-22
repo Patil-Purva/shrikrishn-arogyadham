@@ -1,0 +1,108 @@
+<!-- HERO SECTION -->
+<section class="yoga-hero">
+    <div class="carousel">
+        <div class="slides-track" #slidesTrack>
+            <div class="slide" *ngFor="let img of displayedImages">
+                <img [src]="img" alt="Yoga slide" />
+            </div>
+        </div>
+
+        <!-- UPDATED Overlay Text (more attractive) -->
+        <div class="overlay-top enhanced">
+            <h1>Begin Your Day with Morning Yoga</h1>
+            <p>
+                Experience peace, flexibility, and energy through Ayurveda-inspired Yoga sessions guided by
+                our expert instructors.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- OUR YOGA SESSIONS -->
+<section class="yoga-session">
+    <div class="session-container">
+        <div class="session-left">
+            <h2>Our Yoga Sessions</h2>
+            <p>
+                At Shrikrishna Arogyadham, our experienced yoga instructors are often invited to conduct special yoga
+                sessions and workshops at various organizations, wellness retreats, and community events.
+                Each session focuses on restoring harmony between body and mind through posture correction, breathing
+                techniques (pranayama), and guided relaxation.
+
+
+            </p>
+            <p>
+                Our teachers adapt the sessions to suit all age groups and experience levels, ensuring every participant
+                gains balance, flexibility, and mental calmness — wherever the session is held.
+            </p>
+        </div>
+
+        <div class="session-right">
+            <img src="assets/images/session1.jpg" alt="Yoga Session 1" />
+            <img src="assets/images/session2.jpg" alt="Yoga Session 2" />
+            <img src="assets/images/session3.jpg" alt="Yoga Session 3" />
+            <img src="assets/images/session4.jpg" alt="Yoga Session 4" />
+            <img src="assets/images/session5.jpg" alt="Yoga Session 5" />
+            <img src="assets/images/session6.jpg" alt="Yoga Session 6" />
+        </div>
+    </div>
+</section>
+
+<!-- UPDATED: YOGA ACTIVITIES SECTION WITH IMAGES -->
+<section class="yoga-activities">
+    <div class="activity-card">
+        <div class="activity-img">
+            <img src="assets/images/pranayama.jpg" alt="Pranayama" />
+        </div>
+        <h3> Pranayama</h3>
+        <p>Enhance lung capacity and mental focus through ancient breathing techniques.</p>
+        <button class="learn-more-btn" (click)="openLink('https://en.wikipedia.org/wiki/Pranayama')">Learn More</button>
+    </div>
+
+    <div class="activity-card">
+        <div class="activity-img">
+            <img src="assets/images/surya-namaskar.jpg" alt="Surya Namaskar" />
+        </div>
+        <h3>Surya Namaskar</h3>
+        <p>Boost flexibility and energy through 12 powerful postures of Sun Salutation.</p>
+        <button class="learn-more-btn" (click)="openLink('https://en.wikipedia.org/wiki/Surya_Namaskar')">Learn
+            More</button>
+    </div>
+
+    <div class="activity-card">
+        <div class="activity-img">
+            <img src="assets/images/meditation.jpg" alt="Meditation" />
+        </div>
+        <h3>Meditation</h3>
+        <p>Relax your mind and find peace through focused meditation practices.</p>
+        <button class="learn-more-btn" (click)="openLink('https://en.wikipedia.org/wiki/Meditation')">Learn
+            More</button>
+    </div>
+</section>
+
+<!-- TIMINGS SECTION -->
+<section class="yoga-timings">
+    <h2>Class Timings</h2>
+    <div class="batch-container">
+        <div class="batch-card">
+            <h3>Batch 1</h3>
+            <p>🕕 6:00 AM - 7:00 AM</p>
+            <p>📅 Monday to Saturday</p>
+        </div>
+        <div class="batch-card">
+            <h3>Batch 2</h3>
+            <p>🕖 7:00 AM - 8:00 AM</p>
+            <p>📅 Monday to Saturday</p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="yoga-contact">
+    <h2>Join Our Yoga Classes</h2>
+    <p>Contact our Yoga Teacher to register and start your wellness journey.</p>
+    <div class="teacher-contact">
+        <h3>Dr. Prasad Sangar</h3>
+        <p>📞 +91 9876543210</p>
+    </div>
+</section>
