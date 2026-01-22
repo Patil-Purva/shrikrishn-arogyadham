@@ -1,7 +1,9 @@
+declare const process: any;
+
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyAQFjCZOwgAoC39bBO2x3zBlbLnIOAa81s",
+    apiKey: process.env.youtubeapi,
     authDomain: "shrikrishnacourses.firebaseapp.com",
     projectId: "shrikrishnacourses-6cce7",
     storageBucket: "shrikrishnacourses.appspot.com",
